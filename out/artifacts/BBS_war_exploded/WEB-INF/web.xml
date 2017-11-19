@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ServletLogin</servlet-name>
+        <servlet-class>com.lui.servlet.ServletLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/user/login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>main</servlet-name>
+        <servlet-class>com.lui.servlet.ServletMain</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>main</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletArticleBody</servlet-name>
+        <servlet-class>com.lui.servlet.ServletArticle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletArticleBody</servlet-name>
+        <url-pattern>/article</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletReply</servlet-name>
+        <servlet-class>com.lui.servlet.ServletReply</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletReply</servlet-name>
+        <url-pattern>/user/reply</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletAnnounce</servlet-name>
+        <servlet-class>com.lui.servlet.ServletAnnounce</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAnnounce</servlet-name>
+        <url-pattern>/user/announce</url-pattern>
+    </servlet-mapping>
+
+    
+    <servlet>
+        <servlet-name>ServletLogoff</servlet-name>
+        <servlet-class>com.lui.servlet.ServletLogoff</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLogoff</servlet-name>
+        <url-pattern>/user/logoff</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>ServletRegister</servlet-name>
+        <servlet-class>com.lui.servlet.ServletRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRegister</servlet-name>
+        <url-pattern>/user/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletAdmin</servlet-name>
+        <servlet-class>com.lui.servlet.ServletAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAdmin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletAdminLogin</servlet-name>
+        <servlet-class>com.lui.servlet.ServletAdminLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAdminLogin</servlet-name>
+        <url-pattern>/admin/login</url-pattern>
+    </servlet-mapping>
+</web-app>
